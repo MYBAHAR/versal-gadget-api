@@ -1,0 +1,21 @@
+{
+  "name": "versal-gadget-api",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Versal/versal-gadget-api",
+  "authors": [
+    "Versal"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "versal-gadget-theme": "~0.3.0",
+    "versal-player-api": "~0.3.3",
+    "versal-challenges-js-api": "*"
+  }
+}
