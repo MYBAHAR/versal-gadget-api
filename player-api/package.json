@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/Versal/player-api",
+  "scripts": {
+    "test": "karma start --browsers Firefox --single-run"
+  },
+  "devDependencies": {
+    "karma": "^0.12.19",
+    "karma-chai": "^0.1.0",
+    "karma-cli": "0.0.4",
+    "karma-coffee-preprocessor": "^0.2.1",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-mocha": "^0.1.6",
+    "karma-sinon": "^1.0.3"
+  }
+}
