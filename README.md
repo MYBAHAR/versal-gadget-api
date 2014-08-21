@@ -11,4 +11,5 @@ In your gadget directory: `bower install versal-gadget-api`
 In your gadget's `versal.html`:
 
 `<script src="bower_components/versal-gadget-api/versal-component-runtime/dist/runtime.min.js"></script>`
+
 `<html rel="import" href="bower_components/versal-gadget-api/index.html"/>`
