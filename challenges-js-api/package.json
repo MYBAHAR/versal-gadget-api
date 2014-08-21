@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "test": "karma start --browsers Firefox --single-run"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "karma": "*",
+    "karma-cli": "*",
+    "karma-chai": "*",
+    "karma-firefox-launcher": "*",
+    "karma-mocha": "*",
+    "mocha": "*"
+  }
+}
