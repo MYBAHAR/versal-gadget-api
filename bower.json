@@ -17,7 +17,6 @@
   "dependencies": {
     "eventEmitter": "~4.2.7",
     "underscore": "~1.6.0",
-    "versal-component-runtime": "~0.2.4",
     "normalize-css": "~3.0.1"
   }
 }
