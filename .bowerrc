@@ -1,6 +1,0 @@
-{
-  "directory": "./",
-  "scripts": {
-    "postinstall": "npm install && bower install"
-  }
-}
