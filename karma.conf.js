@@ -8,11 +8,11 @@ module.exports = function(config) {
       'eventEmitter/EventEmitter.js',
       'versal-gadget-api/versal-player-api.js',
       {pattern: 'versal-gadget-api/test/test_gadget.html', included: false},
-      'versal-gadget-api/test/api-spec.coffee',
+      'versal-gadget-api/test/versal-player-api-spec.coffee',
 
       'underscore/underscore.js',
       'versal-gadget-api/versal-challenges-api.js',
-      'versal-gadget-api/test/challenges_iframe_api_spec.js'
+      'versal-gadget-api/test/versal-challenges-api-spec.js'
     ],
     reporters: ['progress'],
     port: 9876,

@@ -257,7 +257,7 @@ Add to the `<head>` of your gadget's `versal.html`:
 
 ```
   <link rel="stylesheet" href="bower_components/normalize-css/normalize.css"/>
-  <link rel="stylesheet" href="bower_components/versal-gadget-api/gadget-theme/index.css"/>
+  <link rel="stylesheet" href="bower_components/versal-gadget-api/versal-gadget-theme.css"/>
 ```
 
 See [styleguide.html](styleguide.html) for some basic examples.
@@ -270,7 +270,7 @@ Add to the `<head>` of your gadget's `versal.html`:
 
 ```
   <script src="bower_components/underscore/underscore.js"></script>
-  <script src="bower_components/versal-gadget-api/challenges-js-api/challenges_iframe_api.js"></script>
+  <script src="bower_components/versal-gadget-api/versal-challenges-api.js"></script>
 ```
 
-This one is even more work in progress. For now, please refer to the [Hello World gadget](https://github.com/Versal/hello-world-gadget) for an example, or see our [tests](challenges_iframe_api_spec.js).
+This one is even more work in progress. For now, please refer to the [Hello World gadget](https://github.com/Versal/hello-world-gadget) for an example, or see our [tests](test/versal-challenges-api-spec.js).

@@ -4,7 +4,7 @@
 //  as a convenience API over postMessage.
 //
 //  Supported events:
-//  https://github.com/Versal/gadget-api-spec
+//  https://github.com/Versal/versal-gadget-launchers/tree/master/iframe-launcher
 var PlayerAPI = function(options){
   EventEmitter.call(this);
 
