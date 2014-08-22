@@ -266,9 +266,7 @@ Add to the `<head>` of your gadget's `versal.html`:
   <link rel="stylesheet" href="bower_components/versal-gadget-api/versal-gadget-theme.css"/>
 ```
 
-See [styleguide.html](styleguide.html) for some basic examples.
-
-*Note that this is very much work in progress!*
+See [styleguide.html](styleguide.html) for some basic examples. Note that this is very much work in progress.
 
 ## versal-challenges-api.js
 
