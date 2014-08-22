@@ -25,6 +25,12 @@ Then add the following to the `<head>` of your your gadget's `versal.html`:
 
 You can also install the different APIs in this repo manually. This is recommended if you're not planning on using Web Components, or want to keep the gadget's footprint as small as possible. See the documentation for the different APIs below for installation instructions.
 
+## More resources & examples
+
+- We have a **tutorial** to get you started: [Gadget development tutorial](https://versal.com/c/gadgets)
+- Use our **SDK** to create, preview, and upload your gadget: [Versal/sdk](https://github.com/Versal/sdk)
+- Check out our **example gadgets**: [Versal/hello-world-gadget](https://github.com/Versal/hello-world-gadget), [Versal/highlightr-iframe](https://github.com/Versal/highlightr-iframe), [Versal/codepen-gadget](https://github.com/Versal/codepen-gadget), [Versal/chess-gadget](https://github.com/Versal/chess-gadget)
+
 ## versal-player-api.js
 
 In you gadget directory: `bower install --save versal-gadget-api`
