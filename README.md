@@ -262,8 +262,8 @@ The callback receives an object of the form `{editable: true/false}`. The value 
 Add to the `<head>` of your gadget's `versal.html`:
 
 ```
-  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css"/>
-  <link rel="stylesheet" href="bower_components/versal-gadget-api/versal-gadget-theme.css"/>
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower_components/versal-gadget-api/versal-gadget-theme.css">
 ```
 
 See [styleguide.html](styleguide.html) for some basic examples. Note that this is very much work in progress.
