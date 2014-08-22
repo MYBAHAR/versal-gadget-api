@@ -278,3 +278,9 @@ Add to the `<head>` of your gadget's `versal.html`:
 ```
 
 This one is even more work in progress. For now, please refer to the [Hello World gadget](https://github.com/Versal/hello-world-gadget) for an example, or see our [tests](test/versal-challenges-api-spec.js).
+
+## Development
+
+To work on the CSS, just open [styleguide.html](styleguide.html) locally in a web browser.
+
+The JS APIs are developed using [test-driven development](http://en.wikipedia.org/wiki/Test-driven_development). First run `npm install`, and then run `karma start`. Karma will run the tests whenever a file changes. You can also run the tests just once, using `npm test`.
