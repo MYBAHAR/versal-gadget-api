@@ -2,9 +2,9 @@
 
 This repository is a collection of everything needed to create a Versal gadget. It contains:
 
-- **versal-player-api.js:** Convenience library for talking to the Versal Player. It essentially wraps the [postMessage API](https://github.com/Versal/versal-gadget-launchers/tree/master/iframe-launcher). *(Depends on eventEmitter.)*
-- **versal-gadget-theme.css:** Some (very) basic styles. We will expand on this the future, to provide a consistent look across gadgets. *(Depends on normalize-css.)*
-- **versal-challenges-api.js:** Very rudimentary scoring API. Use with caution. This will later include server-side scoring and tracking of scores. *(Depends on underscore.)*
+- **versal-player-api.js:** Convenience library for talking to the Versal Player. It essentially wraps the [postMessage API](https://github.com/Versal/versal-gadget-launchers/tree/master/iframe-launcher).
+- **versal-gadget-theme.css:** Some (very) basic styles. We will expand on this the future, to provide a consistent look across gadgets.
+- **versal-challenges-api.js:** Very rudimentary scoring API. Use with caution. This will later include server-side scoring and tracking of scores.
 
 ## Usage
 
