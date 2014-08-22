@@ -1,9 +1,10 @@
 {
   "name": "versal-gadget-api",
+  "main": ["index.html", "versal-player-api.js", "versal-gadget-theme.css", "versal-challenges-api.js"],
   "version": "0.0.1",
   "homepage": "https://github.com/Versal/versal-gadget-api",
   "authors": [
-    "Versal"
+    "Versal Team <support@versal.com>"
   ],
   "license": "MIT",
   "ignore": [
@@ -18,5 +19,8 @@
     "eventEmitter": "~4.2.7",
     "underscore": "~1.6.0",
     "normalize-css": "~3.0.1"
+  },
+  "devDependencies": {
+    "versal-component-runtime": "~0.2.1"
   }
 }

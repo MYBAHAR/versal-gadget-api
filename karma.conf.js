@@ -3,10 +3,16 @@ module.exports = function(config) {
     frameworks: ['mocha', 'chai', 'sinon'],
     basePath: '..',
     files: [
+      'versal-component-runtime/dist/runtime.min.js',
+
       'eventEmitter/EventEmitter.js',
-      'player-api/index.js',
-      'player-api/test/*.coffee',
-      {pattern: 'player-api/test/test_gadget.html', included: false}
+      'versal-gadget-api/versal-player-api.js',
+      {pattern: 'versal-gadget-api/test/test_gadget.html', included: false},
+      'versal-gadget-api/test/api-spec.coffee',
+
+      'underscore/underscore.js',
+      'versal-gadget-api/versal-challenges-api.js',
+      'versal-gadget-api/test/challenges_iframe_api_spec.js'
     ],
     reporters: ['progress'],
     port: 9876,

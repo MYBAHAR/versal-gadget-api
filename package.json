@@ -1,5 +1,5 @@
 {
-  "repository": "https://github.com/Versal/player-api",
+  "repository": "https://github.com/Versal/versal-gadget-api",
   "scripts": {
     "test": "karma start --browsers Firefox --single-run"
   },

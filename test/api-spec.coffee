@@ -121,7 +121,7 @@ describe 'supported commands', ->
       window.addEventListener 'message', startListeningHandler
 
       iframe = document.createElement 'iframe'
-      iframe.setAttribute 'src', '/base/player-api/test/test_gadget.html'
+      iframe.setAttribute 'src', '/base/versal-gadget-api/test/test_gadget.html'
       document.body.appendChild(iframe)
 
     afterEach ->
