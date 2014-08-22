@@ -1,4 +1,4 @@
-window.ChallengesIframeApi = function(changeCallback) {
+window.VersalChallengesAPI = function(changeCallback) {
   this._handleMessage = this._handleMessage.bind(this);
   window.addEventListener('message', this._handleMessage);
   this._challenges = [];
@@ -6,11 +6,11 @@ window.ChallengesIframeApi = function(changeCallback) {
   this._changeCallback = changeCallback || function(){};
 };
 
-window.ChallengesIframeApi.prototype.destroy = function() {
+window.VersalChallengesAPI.prototype.destroy = function() {
   window.removeEventListener('message', this._handleMessage);
 };
 
-window.ChallengesIframeApi.prototype.setChallenges = function(challenges) {
+window.VersalChallengesAPI.prototype.setChallenges = function(challenges) {
   if (!_.isArray(challenges)) throw new Error('challenges argument must be an array');
 
   this._challenges = challenges;
@@ -18,7 +18,7 @@ window.ChallengesIframeApi.prototype.setChallenges = function(challenges) {
   window.parent.postMessage({event: 'setAttributes', data: {'vs-challenges': challenges}}, '*');
 };
 
-window.ChallengesIframeApi.prototype.scoreChallenges = function(responses) {
+window.VersalChallengesAPI.prototype.scoreChallenges = function(responses) {
   if (!_.isArray(responses)) throw new Error('responses argument must be an array');
   if (responses.length !== this._challenges.length) throw new Error('responses argument must have same length as challenges');
 
@@ -34,7 +34,7 @@ window.ChallengesIframeApi.prototype.scoreChallenges = function(responses) {
   window.parent.postMessage({event: 'setLearnerState', data: {'vs-scores': this._scoring}}, '*');
 };
 
-window.ChallengesIframeApi.prototype._handleMessage = function(event) {
+window.VersalChallengesAPI.prototype._handleMessage = function(event) {
   var eventName = event.data.event;
   if(eventName) {
     var handler = this._messageHandlers[eventName];
@@ -44,11 +44,11 @@ window.ChallengesIframeApi.prototype._handleMessage = function(event) {
   }
 };
 
-window.ChallengesIframeApi.prototype._callChangeCallback = function() {
+window.VersalChallengesAPI.prototype._callChangeCallback = function() {
   this._changeCallback({challenges: this._challenges, scoring: this._scoring});
 };
 
-window.ChallengesIframeApi.prototype._messageHandlers = {
+window.VersalChallengesAPI.prototype._messageHandlers = {
   attributesChanged: function(attributes) {
     if (!_.isEqual(this._challenges, attributes['vs-challenges'])) {
       this._challenges = attributes['vs-challenges'] || [];
@@ -64,14 +64,14 @@ window.ChallengesIframeApi.prototype._messageHandlers = {
   }
 };
 
-window.ChallengesIframeApi.prototype._scoreChallenge = function(challenge, response) {
+window.VersalChallengesAPI.prototype._scoreChallenge = function(challenge, response) {
   var scorer = this._scoringStrategies[challenge.scoring];
   if (!scorer) throw new Error('Unknown challenge scorer: ' + challenge.scoring);
 
   return scorer(challenge.answers, response);
 };
 
-window.ChallengesIframeApi.prototype._scoringStrategies = {
+window.VersalChallengesAPI.prototype._scoringStrategies = {
   strict: function(prompt, response) {
     return _.isEqual(prompt, response) ? 1 : 0;
   },

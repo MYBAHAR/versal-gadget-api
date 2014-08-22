@@ -1,8 +1,8 @@
-describe(ChallengesIframeApi, function() {
+describe(VersalChallengesAPI, function() {
   it('reads the challenges from the attributes', function(done) {
     var challenges = [{prompt: 'Sky?', answers: 'blue', scoring: 'strict'}];
 
-    var iframeApi = new ChallengesIframeApi(function(options) {
+    var iframeApi = new VersalChallengesAPI(function(options) {
       chai.expect(options.challenges).to.deep.equal(challenges);
       done();
     });
@@ -13,7 +13,7 @@ describe(ChallengesIframeApi, function() {
   it('reads the scoring from the learnerState', function(done) {
     var scoring = {responses: ['blue'], scores: [1], totalScore: 1};
 
-    var iframeApi = new ChallengesIframeApi(function(options) {
+    var iframeApi = new VersalChallengesAPI(function(options) {
       chai.expect(options.scoring).to.deep.equal(scoring);
       done();
     });
@@ -33,7 +33,7 @@ describe(ChallengesIframeApi, function() {
       }
     });
 
-    var iframeApi = new ChallengesIframeApi();
+    var iframeApi = new VersalChallengesAPI();
     iframeApi.setChallenges(challenges);
   });
 
@@ -51,7 +51,7 @@ describe(ChallengesIframeApi, function() {
       }
     });
 
-    var iframeApi = new ChallengesIframeApi();
+    var iframeApi = new VersalChallengesAPI();
     iframeApi.setChallenges(challenges);
     iframeApi.scoreChallenges(responses);
   });
