@@ -124,6 +124,7 @@ PlayerAPI.prototype.setLearnerAttributes = function(attrs) {
   this.sendMessage('setLearnerState', attrs);
 };
 
+// Deprecated
 PlayerAPI.prototype.setLearnerState = function(attrs) {
   this.sendMessage('setLearnerState', attrs);
 };
