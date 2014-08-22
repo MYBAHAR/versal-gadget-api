@@ -1,4 +1,4 @@
-# Versal Gadget API
+# Versal Gadget API [![Build Status](https://travis-ci.org/Versal/versal-gadget-api.svg?branch=master)](https://travis-ci.org/Versal/versal-gadget-api)
 
 This repository is a collection of everything needed to create a Versal gadget. It contains:
 
