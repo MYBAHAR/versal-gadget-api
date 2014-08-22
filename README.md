@@ -260,7 +260,7 @@ Add to the `<head>` of your gadget's `versal.html`:
   <link rel="stylesheet" href="bower_components/versal-gadget-api/gadget-theme/index.css"/>
 ```
 
-See [styleguide.html] for some basic examples.
+See [styleguide.html](styleguide.html) for some basic examples.
 
 *Note that this is very much work in progress!*
 
