@@ -86,7 +86,7 @@ The gadget communicates with the course player via events sent over a `postMessa
 
 More details about the lifecycle of the gadget are found in the [reference guide](#reference-guide).
 
-It is recommended for gadget developers to use `player-api`, which is a convenience library that hides the need for `postMessage` and provides some other useful functions.
+It is recommended for gadget developers to use `player-api`, which is a convenience library that hides the need for `postMessage` and provides some other useful functions (see below).
 
 # Tutorial
 
@@ -276,22 +276,26 @@ The command `versal upload` needs to be run in the root of the gadget project di
 
 ### Gadget/player messaging
 
-The player communicates with the gadget through a `postMessage`-based message bus. The recommended way is to use the `player-api` module, which hides the low-level details of `postMessage` communication. If you wish you may consult the detailed documentation about the [gadget messaging API](https://github.com/Versal/versal-gadget-launchers/blob/master/iframe-launcher/README.md). However, the [player-api module](https://github.com/Versal/versal-player-api/blob/master/README.md) is more convenient and sufficient for all purposes.
+The player communicates with the gadget through a `postMessage`-based message bus. The recommended way is to use the `player-api` module, which hides the low-level details of `postMessage` communication. If you wish you may consult the detailed documentation about the [gadget messaging API](https://github.com/Versal/versal-gadget-launchers/blob/master/iframe-launcher/README.md). However, the [player-api module](https://github.com/Versal/versal-gadget-api/blob/master/README.md#using-the-versal-player-api) is more convenient and sufficient for all purposes.
 
 #### Installation of `player-api`
 
-Include this module as a Bower dependency:
+This module is part of the Versal gadget API. Include this as a Bower dependency:
 
-    bower install --save Versal/player-api
+    bower install --save versal-gadget-api
 
 If you are using Web components, include the `player-api` into your main HTML document like this:
 
-    <link rel="import" href="bower_components/player-api/index.html">
+    <link rel="import" href="bower_components/versal-gadget-api/versal-gadget-api.html">
+
+The recommended way of using Web components is to include this polyfill,
+
+    bower install --save versal-component-runtime
 
 If you are not using Web components, include these files:
 
     <script src="bower_components/eventEmitter/EventEmitter.js"></script>
-    <script src="bower_components/versal-player-api/index.js"></script>
+    <script src="bower_components/versal-gadget-api/versal-player-api.js"></script>
 
 #### Sending and receiving messages
 
@@ -310,7 +314,7 @@ To send messages to the player, call a method on the `player-api` object, for ex
     // send this command to receive initial events
     playerApi.startListening();
 
-The supported messages and their JSON formats are documented in the repository [Versal/versal-player-api](https://github.com/Versal/player-api/README.md). Here we will describe how gadgets use these messages to communicate with the player.
+The supported messages and their JSON formats are documented in the repository [Versal/versal-gadget-api](https://github.com/Versal/player-api/README.md#using-the-versal-player-api). Here we will describe how gadgets use these messages to communicate with the player.
 
 ### Gadget configuration
 
