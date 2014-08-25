@@ -118,11 +118,11 @@ The newly created gadget is fully operational. To test it, run `versal preview` 
 
 Now open the url [localhost:3000](http://localhost:3000) in a Web browser. You will see a Versal course player, which provides an editing environment with an empty lesson and a gadget below.
 
-![empty lesson](./images/my-gadget-0.png "Empty lesson")
+![empty lesson](docs-images/my-gadget-0.png "Empty lesson")
 
 Double-click on the gadget to add it to the lesson. You should see your working gadget:
 
-![lesson with gadget](./images/my-gadget-1.png "Lesson with gadget")
+![lesson with gadget](docs-images/my-gadget-1.png "Lesson with gadget")
 
 The gadget shows a question and an answer. The course author can edit the question text. (You can click on the question text to start editing it, since you are the author of this "course".) The learner can enter an answer.
 
@@ -174,7 +174,7 @@ Let's set a background color on the gadget. Add these lines to the `<style>` tag
 
 Now reload the browser window where you opened the preview. You will see the changed gadget:
 
-![lesson with changed gadget](./images/my-gadget-2.png "Lesson with changed gadget")
+![lesson with changed gadget](docs-images/my-gadget-2.png "Lesson with changed gadget")
 
 In this way, you can preview your new gadget code as you are developing it.
 
@@ -219,7 +219,7 @@ player.on('attributesChanged', function(data){
 After Now reload the browser window with the gadget. Click on the cogwheel icon to open the property sheet. You can now select a color:
 
 
-![lesson with colored gadget](./images/my-gadget-3.png "Lesson with colored gadget")
+![lesson with colored gadget](docs-images/my-gadget-3.png "Lesson with colored gadget")
 
 
 ## Publish the gadget
@@ -358,7 +358,7 @@ At the initialization stage, the gadget may also post the messages `setEmpty`, `
 
 The `setEmpty` message is relevant when editing; it tells the player to display a gadget placeholder indicating that the gadget is empty and cannot yet show any useful content. The author will see right away that the gadget still needs to be configured. For instance, an image still needs to be uploaded, or other content needs to be configured, before the gadget can show anything. Here is how an empty gadget looks:
 
-![empty gadget](./images/empty_gadget.png "Empty gadget")
+![empty gadget](docs-images/empty_gadget.png "Empty gadget")
 
 The `setHeight` message specifies the desired pixel height of the gadget's iframe. The width of the iframe is fixed, equal to the total width of the lesson window. (In the Web browser, this is 724 px, but it can be different on other platforms).
 
@@ -415,7 +415,7 @@ Example:
 
 Here is an example property sheet, showing a slider for a numerical value ("number of words") and a drop-down selection box ("chosen author"):
 
-![property sheet](./images/property_sheet_1.png "Property sheet")
+![property sheet](docs-images/property_sheet_1.png "Property sheet")
 
 The property sheet in this screenshot was configured by the following message:
 
