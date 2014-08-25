@@ -521,10 +521,10 @@ Go to the course you created where your gadget has been used. Click on the "Sand
 
 # Example gadgets
 
-* [Versal/hello-world-gadget](https://github.com/Versal/hello-world-gadget)
-* [Versal/highlightr-iframe](https://github.com/Versal/highlightr-iframe)
-* [Versal/codepen-gadget](https://github.com/Versal/codepen-gadget)
-* [Versal/chess-gadget](https://github.com/Versal/chess-gadget)
+* [Hello world](https://github.com/Versal/hello-world-gadget)
+* [Highlightr](https://github.com/Versal/highlightr-iframe)
+* [Codepen](https://github.com/Versal/codepen-gadget)
+* [Chess](https://github.com/Versal/chess-gadget)
 
 # Support
 
