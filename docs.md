@@ -15,7 +15,6 @@ See [installation help](https://github.com/Versal/sdk#installation-in-depth) if 
 * Familiarize yourself with the [underlying concepts](#overview-and-concepts) of gadget development
 * Build a basic gadget in a [step-by-step tutorial](#tutorial)
 * Look up more information in the [gadget API reference](#reference-guide)
-* Read some example gadget code: [Versal/hello-world-gadget](https://github.com/Versal/hello-world-gadget), [Versal/highlightr-iframe](https://github.com/Versal/highlightr-iframe), [Versal/codepen-gadget](https://github.com/Versal/codepen-gadget), [Versal/chess-gadget](https://github.com/Versal/chess-gadget)
 
 ## Some useful references
 
@@ -528,6 +527,13 @@ To update a published gadget, you need to do two things:
 Suppose you already created some courses that use your gadget version `0.1.3`, and now you published an updated version `0.1.4`. When you do this, the courses do not automatically start using the updated version. To avoid breaking the existing courses, all older gadget versions will be preserved by the platform. The course authors need to agree explicitly to upgrade your gadget to a new version.
 
 Go to the course you created where your gadget has been used. Click on the "Sandbox" tray and you will see that your gadget's icon has a band on it, indicating that an upgrade is available. Click on the band and confirm the upgrade to a new version.
+
+# Example gadgets
+
+* [Versal/hello-world-gadget](https://github.com/Versal/hello-world-gadget)
+* [Versal/highlightr-iframe](https://github.com/Versal/highlightr-iframe)
+* [Versal/codepen-gadget](https://github.com/Versal/codepen-gadget)
+* [Versal/chess-gadget](https://github.com/Versal/chess-gadget)
 
 # Support
 
