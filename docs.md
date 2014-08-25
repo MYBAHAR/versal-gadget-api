@@ -6,22 +6,6 @@ title: Versal gadget development
 
 Welcome to Versal's gadget documentation! Here you'll find everything needed to get started building rich learning tools on the Versal platform. Please see the **Support** section if you have any questions that aren't answered here!
 
-* Install the Versal SDK:
-
-      npm install -g versal-sdk
-
-See [installation help](https://github.com/Versal/sdk#installation-in-depth) if you have problems here.
-
-* Familiarize yourself with the [underlying concepts](#overview-and-concepts) of gadget development
-* Build a basic gadget in a [step-by-step tutorial](#tutorial)
-* Look up more information in the [gadget API reference](#reference-guide)
-
-## Some useful references
-
-* [Versal SDK command-line summary](https://github.com/Versal/sdk/README.md)
-* [Player API](https://github.com/Versal/versal-gadget-api/README.md#using-the-versal-player-api)
-* [Low-level gadget messaging API](https://github.com/Versal/versal-gadget-launchers/blob/master/iframe-launcher/README.md)
-
 ## What you need to know
 
 * JavaScript, HTML5, CSS
@@ -527,6 +511,13 @@ To update a published gadget, you need to do two things:
 Suppose you already created some courses that use your gadget version `0.1.3`, and now you published an updated version `0.1.4`. When you do this, the courses do not automatically start using the updated version. To avoid breaking the existing courses, all older gadget versions will be preserved by the platform. The course authors need to agree explicitly to upgrade your gadget to a new version.
 
 Go to the course you created where your gadget has been used. Click on the "Sandbox" tray and you will see that your gadget's icon has a band on it, indicating that an upgrade is available. Click on the band and confirm the upgrade to a new version.
+
+## External links
+
+* [Installation help](https://github.com/Versal/sdk#installation-in-depth)
+* [Versal SDK command-line summary](https://github.com/Versal/sdk/README.md)
+* [Player API](https://github.com/Versal/versal-gadget-api/README.md#using-the-versal-player-api)
+* [Low-level gadget messaging API](https://github.com/Versal/versal-gadget-launchers/blob/master/iframe-launcher/README.md)
 
 # Example gadgets
 
