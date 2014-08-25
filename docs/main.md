@@ -199,7 +199,7 @@ player.on('attributesChanged', function(data){
 });
 ```
 
-After Now reload the browser window with the gadget. Click on the cogwheel icon to open the property sheet. You can now select a color:
+Now reload the browser window with the gadget. Click on the cogwheel icon to open the property sheet. You can now select a color:
 
 
 ![lesson with colored gadget](images/my-gadget-3.png "Lesson with colored gadget")
