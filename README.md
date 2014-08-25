@@ -27,7 +27,7 @@ You can also install the different APIs in this repo manually. This is recommend
 
 ## More resources and examples
 
-- We have a **tutorial** to get you started, [Gadget development tutorial](https://versal.com/c/gadgets), which is a nicer version of [this file](https://github.com/Versal/versal-gadget-api/docs.md)
+- We have a **tutorial** to get you started, [Gadget development tutorial](https://versal.com/c/gadgets), which is a nicer version of [this file](docs.md)
 - Use our **SDK** to create, preview, and upload your gadget: [Versal/sdk](https://github.com/Versal/sdk)
 - Check out our **example gadgets**: [Versal/hello-world-gadget](https://github.com/Versal/hello-world-gadget), [Versal/highlightr-iframe](https://github.com/Versal/highlightr-iframe), [Versal/codepen-gadget](https://github.com/Versal/codepen-gadget), [Versal/chess-gadget](https://github.com/Versal/chess-gadget)
 
