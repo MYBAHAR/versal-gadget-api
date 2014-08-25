@@ -4,7 +4,7 @@ title: Versal gadget development
 
 # Intro
 
-Welcome to Versal's gadget documentation! Here you'll find everything needed to get started building rich learning tools on the Versal platform. Please [contact us](#support) if you have any questions!
+Welcome to Versal's gadget documentation! Here you'll find everything needed to get started building rich learning tools on the Versal platform. Please see the **Support** section if you have any questions that aren't answered here!
 
 * Install the Versal SDK:
 
@@ -528,3 +528,12 @@ To update a published gadget, you need to do two things:
 Suppose you already created some courses that use your gadget version `0.1.3`, and now you published an updated version `0.1.4`. When you do this, the courses do not automatically start using the updated version. To avoid breaking the existing courses, all older gadget versions will be preserved by the platform. The course authors need to agree explicitly to upgrade your gadget to a new version.
 
 Go to the course you created where your gadget has been used. Click on the "Sandbox" tray and you will see that your gadget's icon has a band on it, indicating that an upgrade is available. Click on the band and confirm the upgrade to a new version.
+
+# Support
+
+There are several ways to get in touch with Versal engineers for support:
+
+* [Community forum](http://community.versal.com/)
+* [Facebook group](https://www.facebook.com/groups/versalgadgetdevelopers/)
+* IRC channel: #versal on Freenode [via web](https://webchat.freenode.net/)
+* [Hipchat room](http://www.hipchat.com/gDg353d8w)
