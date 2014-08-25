@@ -67,7 +67,7 @@ The gadget communicates with the course player via events sent over a `postMessa
 * use some standard visual features of the Versal course player ("empty gadget" and "gadget error" views, property sheets, and asset upload dialog)
 * store question/answer data and perform scoring (for quizzes and other challenges)
 
-More details about the lifecycle of the gadget are found in the [reference guide](#reference-guide).
+More details about the lifecycle of the gadget are found in the **Reference guide**
 
 It is recommended for gadget developers to use `player-api`, which is a convenience library that hides the need for `postMessage` and provides some other useful functions (see below).
 
