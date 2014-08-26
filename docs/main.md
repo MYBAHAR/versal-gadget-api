@@ -259,7 +259,7 @@ The command `versal upload` needs to be run in the root of the gadget project di
 
 ### Gadget/player messaging
 
-The player communicates with the gadget through a `postMessage`-based message bus. The recommended way is to use the `player-api` module, which hides the low-level details of `postMessage` communication. If you wish you may consult the detailed documentation about the [gadget messaging API](https://github.com/Versal/versal-gadget-launchers/blob/master/iframe-launcher/README.md). However, the [player-api module](https://github.com/Versal/versal-gadget-api/blob/master/README.md#using-the-versal-player-api) is more convenient and sufficient for all purposes.
+The player communicates with the gadget through a `postMessage`-based message bus. The recommended way is to use the `player-api` module, which hides the low-level details of `postMessage` communication. If you wish you may consult the detailed documentation about the [gadget messaging API](https://github.com/Versal/versal-gadget-launchers/blob/master/iframe-launcher/README.md). However, the [player-api module](https://github.com/Versal/versal-gadget-api/blob/master/README.md#versal-player-apijs) is more convenient and sufficient for all purposes.
 
 #### Installation of `player-api`
 
@@ -297,7 +297,7 @@ To send messages to the player, call a method on the `player-api` object, for ex
     // send this command to receive initial events
     playerApi.startListening();
 
-The supported messages and their JSON formats are documented in the repository [Versal/versal-gadget-api](https://github.com/Versal/player-api/README.md#using-the-versal-player-api). Here we will describe how gadgets use these messages to communicate with the player.
+The supported messages and their JSON formats are documented in the repository [Versal/versal-gadget-api](https://github.com/Versal/versal-gadget-api/blob/master/README.md#versal-player-apijs). Here we will describe how gadgets use these messages to communicate with the player.
 
 ### Gadget configuration
 
@@ -448,7 +448,7 @@ Upon a `requestAsset` message, the player displays a UI for uploading an asset (
 
 A Versal asset contains an array of `representations`. Each element of that array describes an image or a video, which may have been scaled down to a smaller size. One of the representations is tagged as `original:true`; this is the one that has not been scaled down.  (If you upload a small image, it will not be scaled down, and so there will be only one "representation", which will be `original`.)
 
-All uploaded assets are automatically processed (and scaled down if necessary) by the Versal platform. The resulting representations are stored in remote URLs. To display the image, you must formulate a valid URL by rendering a provided "url template" with the representation's ID. The template is delivered to the gadget via the [`environmentChanged`](https://github.com/Versal/iframe-launcher#environmentchanged) message. The template will be similar to `//static.versal.com/restapi/assets/<%= id %>` which can be rendered by replacing the substition section at the end of the template with the desired representation Id. For example you can get full URLs like this:
+All uploaded assets are automatically processed (and scaled down if necessary) by the Versal platform. The resulting representations are stored in remote URLs. To display the image, you must formulate a valid URL by rendering a provided "url template" with the representation's ID. The template is delivered to the gadget via the [`environmentChanged`](https://github.com/Versal/versal-gadget-launchers/blob/master/iframe-launcher/README.md#environmentchanged) message. The template will be similar to `//static.versal.com/restapi/assets/<%= id %>` which can be rendered by replacing the substition section at the end of the template with the desired representation Id. For example you can get full URLs like this:
 
 ```
 var url = playerApi.assetUrl(assetId);
@@ -514,10 +514,10 @@ Go to the course you created where your gadget has been used. Click on the "Sand
 
 ## External links
 
-* [Installation help](https://github.com/Versal/sdk#installation-in-depth)
-* [Versal SDK command-line summary](https://github.com/Versal/sdk/README.md)
-* [Player API](https://github.com/Versal/versal-gadget-api/README.md#using-the-versal-player-api)
-* [Low-level gadget messaging API](https://github.com/Versal/versal-gadget-launchers/blob/master/iframe-launcher/README.md)
+* [Installation help](https://github.com/Versal/sdk/blob/master/README.md#installation-in-depth)
+* [Versal SDK command-line summary](https://github.com/Versal/sdk/blob/master/README.md)
+* [Player API](https://github.com/Versal/versal-gadget-api/blob/master/README.md#versal-player-apijs)
+* [Low-level gadget messaging API](https://github.com/Versal/versal-gadget-launchers/blob/master/iframe-launcher/README.md#gadget-api)
 
 # Example gadgets
 
