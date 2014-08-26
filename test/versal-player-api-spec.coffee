@@ -100,6 +100,14 @@ describe 'supported commands', ->
       papi.handleMessage data: { event: 'attributesChanged', data: { foo: { id: 1 } } }
       assert assetSelected.calledWith { name: 'foo', asset: { id: 1 }}
 
+    it 'requestAsset emits assetSelected only once', ->
+      papi.requestAsset { type: 'image', attribute: 'foo' }
+      assetSelected = sinon.spy()
+      papi.on 'assetSelected', assetSelected
+      papi.handleMessage data: { event: 'attributesChanged', data: { foo: { id: 1 } } }
+      papi.handleMessage data: { event: 'attributesChanged', data: { foo: { id: 1 } } }
+      assert.equal assetSelected.callCount, 1
+
     it 'requestAsset triggers a callback', ->
       assetSelected = sinon.spy()
       papi.requestAsset { type: 'image', attribute: 'foo' }, assetSelected
