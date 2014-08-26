@@ -62,10 +62,13 @@ PlayerAPI.prototype.handleMessage = function(evt) {
 // TODO: move implementation to the player
 PlayerAPI.prototype._triggerAssetCallbacks = function(attrs){
   Object.keys(this._assetAttributes).forEach(function(name){
+    if(this._assetAttributes[name] != true) { return; }
+
     if(attrs[name]) {
       var asset = attrs[name];
       this.emit('assetSelected', { name: name, asset: asset });
       attrs[name] = null;
+      this._assetAttributes[name] = null;
 
       if(this._assetCallbacks[name]) {
         this._assetCallbacks[name].call(this, asset);
