@@ -1,7 +1,7 @@
 {
   "name": "versal-gadget-api",
   "main": ["index.html", "versal-player-api.js", "versal-gadget-theme.css", "versal-challenges-api.js"],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/Versal/versal-gadget-api",
   "authors": [
     "Versal Team <support@versal.com>"
