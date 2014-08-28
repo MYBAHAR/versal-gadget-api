@@ -189,13 +189,13 @@ The argument is the asset's ID string.
 
 Ask the player to show a standard dialog for uploading an asset.
 
-Usage: `playerApi.requestAsset({attribute: attrName, type: assetType}, function(assetData){...})`
-
-The first parameter describes the desired type of the asset and the name of the gadget attribute in which the new asset's metadata will be stored after a successful upload.
+Usage: `playerApi.requestAsset({type: assetType, attribute: attrName}, function(assetData){...})`
 
 Possible asset types are `image` and `video`.
 
-The second parameter (the callback) is optional. The callback will be invoked after a successful upload.
+`attribute` is the name of the gadget attribute in which the new asset's metadata will be stored after a successful upload. It is optional and defaults to `__asset__`. This is useful if you want to store the image data or URL yourself in an attribute that is an object or array.
+
+The callback is optional. It will be invoked after a successful upload, and is called with the same `assetData` as is stored in the attribute.
 
 Each newly uploaded asset is processed and stored on the Versal platform. The asset is described by the data structure of the form
 

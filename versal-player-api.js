@@ -67,7 +67,6 @@ PlayerAPI.prototype._triggerAssetCallbacks = function(attrs){
     if(attrs[name]) {
       var asset = attrs[name];
       this.emit('assetSelected', { name: name, asset: asset });
-      attrs[name] = null;
       this._assetAttributes[name] = null;
 
       if(this._assetCallbacks[name]) {
